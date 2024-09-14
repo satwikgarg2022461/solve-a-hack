@@ -1,4 +1,55 @@
-.screen-container{
-    width :80vw;
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.player-analysis {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    color: #f0c100;
+    width: 300px;
+    backdrop-filter: blur(10px);
+    text-align: left;
+    z-index: 1;  /* Keeps it above the video */
+}
+
+.player-analysis h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.player-analysis ul {
+    list-style: none;
+}
+
+.player-analysis li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
